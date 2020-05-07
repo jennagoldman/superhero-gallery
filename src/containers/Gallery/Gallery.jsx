@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react';
+import { fetchHeroes } from '../../services/marvel-api';
 
 const Gallery = () => {
-  const [gallery, setGallery] = useState([]);
+  const [heroes, setHeroes] = useState([]);
 
   useEffect(() => {
-    fetch('https://gateway.marvel.com/v1/public/characters?apikey=1f02de49106b672f61d699663164616b')
-      .then(res => res.json())
-      .then(json => json.data.results)
-      .then(results => setGallery(results));
-  });
+    fetchHeroes()
+      .then(heroes => setHeroes(heroes));
+  }, []);
 
   return (
     <h2>Heroes Gallery</h2>
