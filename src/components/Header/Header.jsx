@@ -5,3 +5,5 @@ const Header = () => (
     <h1>Marvel Superheroes Gallery</h1>
   </header>
 );
+
+export default Header;
