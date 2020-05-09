@@ -6,6 +6,8 @@ const Paging = () => {
 
   return (
     <>
+      <button>&lt;</button>
+      <button>&gt;</button>
     </>
   );
 };
