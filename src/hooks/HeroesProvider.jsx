@@ -1,10 +1,16 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useState, useEffect } from 'react';
+import { fetchHeroes } from '../services/marvel-api.js';
 import PropTypes from 'prop-types';
 
 export const HeroesContext = createContext();
 
 export const HeroesProvider = ({ children }) => {
   const [heroes, setHeroes] = useState([]);
+
+  useEffect(() => {
+    fetchHeroes()
+      .then(heroes => setHeroes(heroes));
+  }, []);
 
   return (
     <HeroesContext.Provider value={{ heroes, setHeroes }}>
