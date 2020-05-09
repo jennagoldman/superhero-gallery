@@ -7,10 +7,11 @@ const HeroesList = () => {
 
   const heroNodes = heroes.map(hero => (
     <li key={hero.id}>
-      <p>{hero.name}</p>
-      <img src={hero.imageUrl} alt={hero.name} />
-      <p>{hero.description}</p>
-      <a href={hero.comicsUrl}></a>
+      <div className={styles.heroDiv}>
+        <p>{hero.name}</p>
+        <img src={hero.imageUrl} alt={hero.name} />
+        <a href={hero.comicsUrl}>View Comics</a>
+      </div>
     </li>
   ));
   return (
