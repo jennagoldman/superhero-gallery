@@ -1,5 +1,6 @@
 import React from 'react';
 import { useHeroes } from '../../hooks/HeroesProvider.jsx';
+import styles from './HeroesList.css';
 
 const HeroesList = () => {
   const heroes = useHeroes();
