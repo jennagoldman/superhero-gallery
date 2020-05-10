@@ -1,0 +1,9 @@
+main.light {
+  background: white;
+  color: #333;
+}
+
+main.dark {
+  background: navy;
+  color: white;
+}
