@@ -1,5 +1,5 @@
-export const fetchHeroes = () => {
-  return fetch(`https://gateway.marvel.com/v1/public/characters?apikey=${process.env.REACT_APP_API_KEY}`)
+export const fetchHeroes = offset => {
+  return fetch(`https://gateway.marvel.com/v1/public/characters?limit=25&offset=${offset}&apikey=${process.env.REACT_APP_API_KEY}`)
     .then(res => res.json())
     .then(json => json.data.results.map(hero => ({
       id: hero.id,
