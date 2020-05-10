@@ -6,8 +6,13 @@ export const ThemeContext = createContext();
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState('light');
 
+  const toggleTheme = ({ target }) => {
+    if(target.checked) setTheme('dark');
+    if(!target.checked) setTheme('light');
+  };
+
   return (
-    <ThemeContext.Provider value={{ theme, setTheme }}>
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
       {children}
     </ThemeContext.Provider>
   );
@@ -20,4 +25,9 @@ ThemeProvider.propTypes = {
 export const useTheme = () => {
   const { theme } = useContext(ThemeContext);
   return theme;
+};
+
+export const useToggle = () => {
+  const { toggleTheme } = useContext(ThemeContext);
+  return toggleTheme;
 };
