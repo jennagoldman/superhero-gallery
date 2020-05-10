@@ -6,14 +6,24 @@ export const HeroesContext = createContext();
 
 export const HeroesProvider = ({ children }) => {
   const [heroes, setHeroes] = useState([]);
+  const [offset, setOffset] = useState(0);
 
   useEffect(() => {
-    fetchHeroes()
+    fetchHeroes(0)
       .then(heroes => setHeroes(heroes));
   }, []);
 
+  useEffect(() => {
+    if(offset > 0) {
+      fetchHeroes(offset)
+        .then(heroes => setHeroes(heroes));
+    }
+  }, [offset]);
+
+  const handleOffset = by => setOffset(prevOffset => prevOffset + by);
+
   return (
-    <HeroesContext.Provider value={{ heroes, setHeroes }}>
+    <HeroesContext.Provider value={{ heroes, offset, handleOffset }}>
       {children}
     </HeroesContext.Provider>
   );
