@@ -37,3 +37,13 @@ export const useHeroes = () => {
   const { heroes } = useContext(HeroesContext);
   return heroes;
 };
+
+export const useOffset = () => {
+  const { offset } = useContext(HeroesContext);
+  return offset;
+};
+
+export const useHandleOffset = () => {
+  const { handleOffset } = useContext(HeroesContext);
+  return handleOffset;
+};
