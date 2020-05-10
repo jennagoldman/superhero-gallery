@@ -8,9 +8,9 @@ const HeroesList = () => {
   const heroNodes = heroes.map(hero => (
     <li key={hero.id}>
       <div className={styles.heroDiv}>
-        <p>{hero.name}</p>
+        <p className={styles.heroName}>{hero.name}</p>
         <img src={hero.imageUrl} alt={hero.name} />
-        <a href={hero.comicsUrl}>View Comics</a>
+        <a href={hero.comicsUrl} target="_blank" rel="noopener noreferrer">View Comics</a>
       </div>
     </li>
   ));

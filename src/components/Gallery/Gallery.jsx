@@ -8,8 +8,8 @@ const Gallery = () => {
 
   return (
     <>
-      <HeroesList heroes={heroes} />
       <Paging heroes={heroes} />
+      <HeroesList heroes={heroes} />
     </>
   );
 };
