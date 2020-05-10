@@ -1,21 +1,18 @@
 import React from 'react';
 import { useHeroes } from '../../hooks/HeroesProvider.jsx';
+import HeroItem from './HeroItem.jsx';
 import styles from './HeroesList.css';
 
 const HeroesList = () => {
   const heroes = useHeroes();
 
   const heroNodes = heroes.map(hero => (
-    <li key={hero.id}>
-      <div className={styles.heroDiv}>
-        <p className={styles.heroName}>{hero.name}</p>
-        <img src={hero.imageUrl} alt={hero.name} />
-        <a href={hero.comicsUrl} target="_blank" rel="noopener noreferrer">View Comics</a>
-      </div>
+    <li key={hero.id} className={styles.heroListItem}>
+      <HeroItem {...hero} />
     </li>
   ));
   return (
-    <ul>
+    <ul className={styles.heroesList}>
       {heroNodes}
     </ul>
   );

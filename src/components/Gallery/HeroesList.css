@@ -1,10 +1,4 @@
-img {
-  width: 15rem;
-  height: 15rem;
-  border-radius: 50%;
-}
-
-ul {
+.heroesList {
   list-style: none;
   text-align: center;
   margin-block-start: 0;
@@ -12,16 +6,8 @@ ul {
   padding-inline-start: 0;
 }
 
-li {
+.heroListItem {
   display: inline-block;
   margin: 2rem;
 }
 
-.heroDiv {
-  display: inline-block;
-  width: 250px;
-}
-
-.heroName {
-  font-weight: 700;
-}

@@ -1,0 +1,14 @@
+.heroDiv {
+  display: inline-block;
+  width: 250px;
+}
+
+.heroName {
+  font-weight: 700;
+}
+
+.heroDiv img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+}
