@@ -9,8 +9,8 @@ const Header = () => {
   return (
     <header className={`${styles[theme]}`}>
       <h1>Marvel Superheroes Gallery</h1>
-      <input type="checkbox" onChange={toggle} id="toggle" />
-      <label htmlFor="toggle">Toggle Dark Mode</label>
+      <input type="checkbox" onChange={toggle} id="toggle" className={styles.checkbox} />
+      <label htmlFor="toggle" className={styles.toggle}></label>
     </header>
   ); 
 };
