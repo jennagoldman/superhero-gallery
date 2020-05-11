@@ -1,13 +1,16 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { ThemeProvider } from '../../hooks/ThemeProvider.jsx';
-import Header from './Header.jsx';
+import { HeroesProvider } from '../../hooks/HeroesProvider.jsx';
+import Gallery from './Gallery.jsx';
 
-describe('Header', () => {
+describe('Gallery', () => {
   it('matches a snapshot', () => {
     const wrapper = shallow(
       <ThemeProvider>
-        <Header />
+        <HeroesProvider>
+          <Gallery />
+        </HeroesProvider>
       </ThemeProvider>
     );
     expect(wrapper).toMatchSnapshot();
