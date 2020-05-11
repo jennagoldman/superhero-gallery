@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArtistsList matches a snapshot 1`] = `
+<div
+  className="heroDiv"
+>
+  <p
+    className="heroName"
+  >
+    Loki
+  </p>
+  <img
+    alt="Loki"
+    src="http://i.annihil.us/u/prod/marvel/i/mg/d/90/526547f509313.jpg"
+  />
+  <a
+    href="http://marvel.com/comics/characters/1009407/loki?utm_campaign=apiRef&utm_source=1f02de49106b672f61d699663164616b"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    View Comics
+  </a>
+</div>
+`;
