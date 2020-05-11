@@ -13,7 +13,7 @@ section {
 }
 
 .checkbox:checked + .toggle {
-  background-color: #7983FF;
+  background-color: #007BFF;
 }
 
 .toggle {
@@ -21,7 +21,7 @@ section {
   display: inline-block;
   width: 2.5rem;
   height: 1.25rem;
-  background-color: #eee;
+  background-color: #BDBDBD;
   border-radius: 1.25rem;
 }
 
@@ -31,7 +31,7 @@ section {
   width: 1.2rem;
   height: 1.2rem;
   border-radius: 50%;
-  background-color: red;
+  background-color: #C11818;
   top: 1px;
   left: 1px;
   transition: all 0.3s;

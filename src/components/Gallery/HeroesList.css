@@ -1,9 +1,9 @@
 .heroesList {
-  list-style: none;
-  text-align: center;
   margin-block-start: 0;
   margin-block-end: 0;
   padding-inline-start: 0;
+  list-style: none;
+  text-align: center;
 }
 
 .heroListItem {
