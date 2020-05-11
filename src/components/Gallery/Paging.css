@@ -11,7 +11,13 @@
   color: #FFF;
   background: #007BFF;
   padding: 0.5rem 1rem;
-  border-radius: 5px;
   border: 1px solid #007BFF;
+  border-radius: 5px;
   cursor: pointer;
+}
+
+.pagingSection button:disabled {
+  background: #BDBCBC;
+  border: 1px solid #BDBCBC;
+  cursor: default;
 }
