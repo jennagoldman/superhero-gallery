@@ -1,9 +1,15 @@
+section {
+  width: 3rem;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+
 .checkbox {
   display: none;
 }
 
 .checkbox:checked + .toggle::after {
-  left: 20px;
+  left: 1.35rem;
 }
 
 .checkbox:checked + .toggle {
@@ -13,17 +19,17 @@
 .toggle {
   position: relative;
   display: inline-block;
-  width: 40px;
-  height: 20px;
+  width: 2.5rem;
+  height: 1.25rem;
   background-color: #eee;
-  border-radius: 20px;
+  border-radius: 1.25rem;
 }
 
 .toggle::after {
   content: '';
   position: absolute;
-  width: 18px;
-  height: 18px;
+  width: 1.2rem;
+  height: 1.2rem;
   border-radius: 50%;
   background-color: red;
   top: 1px;
