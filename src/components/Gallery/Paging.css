@@ -1,0 +1,17 @@
+.pagingSection {
+  width: 17rem;
+  margin: 0 auto;
+}
+
+.pagingSection span {
+  padding: 1rem;
+}
+
+.pagingSection button {
+  color: #FFF;
+  background: #007BFF;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid #007BFF;
+  cursor: pointer;
+}
