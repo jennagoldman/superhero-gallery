@@ -1,0 +1,13 @@
+.heroesList {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.heroListItem {
+  display: inline-block;
+  margin: 2rem;
+}
+

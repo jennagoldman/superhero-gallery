@@ -1,0 +1,38 @@
+section {
+  width: 3rem;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+
+.checkbox {
+  display: none;
+}
+
+.checkbox:checked + .toggle::after {
+  left: 1.35rem;
+}
+
+.checkbox:checked + .toggle {
+  background-color: #007BFF;
+}
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 2.5rem;
+  height: 1.25rem;
+  background-color: #BDBDBD;
+  border-radius: 1.25rem;
+}
+
+.toggle::after {
+  content: '';
+  position: absolute;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background-color: #C11818;
+  top: 1px;
+  left: 1px;
+  transition: all 0.3s;
+}

@@ -1,0 +1,18 @@
+h1 {
+  color: #C11818;
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Bangers', sans-serif;
+  font-size: 3.5em;
+  letter-spacing: 3px;
+}
+
+.light {
+  background: #FFF
+}
+
+.dark {
+  color: #FFF;
+  background: #010D27;
+}

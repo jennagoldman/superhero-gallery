@@ -1,19 +1,18 @@
 import React from 'react';
+import { shallow } from 'enzyme';
 import { ThemeProvider } from '../../hooks/ThemeProvider.jsx';
 import { HeroesProvider } from '../../hooks/HeroesProvider.jsx';
-import Header from '../Header/Header.jsx';
-import Gallery from '../Gallery/Gallery.jsx';
+import HeroesList from './HeroesList.jsx';
 
-export default function App() {
-  return (
-    <>
+describe('Gallery', () => {
+  it('matches a snapshot', () => {
+    const wrapper = shallow(
       <ThemeProvider>
-        <Header />
         <HeroesProvider>
-          <Gallery />
+          <HeroesList />
         </HeroesProvider>
       </ThemeProvider>
-    </>
-  );
-}
-  
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
+});
